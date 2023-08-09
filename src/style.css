@@ -17,6 +17,7 @@ h2 {
   padding-bottom: 40px;
 }
 .container {
+  max-width: 600px;
   margin: 20px;
   padding: 20px;
   background-color: #cef2ff;

@@ -45,7 +45,7 @@ function showWeather(response) {
   cityName.innerHTML = response.data.name;
   humidity.innerHTML = `Humidity: ${response.data.main.humidity}%`;
   weatherDescription.innerHTML = response.data.weather[0].description;
-  windSpeed.innerHTML = `Wind: ${Math.round(response.data.wind.speed)}mph`;
+  windSpeed.innerHTML = `Wind: ${Math.round(response.data.wind.speed)}Km/h`;
   maxTemp.innerHTML = Math.round(response.data.main.temp_max);
   minTemp.innerHTML = Math.round(response.data.main.temp_min);
 }

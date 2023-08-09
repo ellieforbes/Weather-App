@@ -34,11 +34,11 @@
         </button>
       </div>
       <h1>
-        <span id="city-name">London</span>
+        <span id="city-name"></span>
         <div class="emoji">🌤</div>
       </h1>
       <h2>
-        <span id="degree">23</span>
+        <span id="degree"></span>
         <span class="units"
           ><a href="#" id="celsius-link">°C</a> |
           <a href="#" id="farenheit-link">°F</a></span
@@ -53,14 +53,14 @@
           </strong>
         </p>
         <p>
-          <strong> H: <span id="max-temp">24°</span> </strong> L:
-          <span id="min-temp">15°</span> <br /><span id="weather-description"
-            >Partly Cloudy</span
-          >
-          <br /><span id="humidity">Humidity: 53%</span> <br /><span
+          <strong> H: <span id="max-temp">°</span> </strong> L:
+          <span id="min-temp">°</span> <br /><span
+            id="weather-description"
+          ></span>
+          <br /><span id="humidity">Humidity: </span> <br /><span
             id="wind-speed"
-            >Wind: 10mph</span
-          >
+            >Wind:
+          </span>
         </p>
       </div>
 
@@ -92,12 +92,15 @@
         </div>
       </div>
     </div>
-    <p id="source-code-link">
-      <a href="https://github.com/ellieforbes/Weather-App" target="_blank"
-        >Open-source Code</a
-      >
-      by Ellie Forbes
-    </p>
+    <small>
+      <p id="source-code-link">
+        <a href="https://github.com/ellieforbes/Weather-App" target="_blank"
+          >Open-source Code</a
+        >
+        by Ellie Forbes
+      </p>
+    </small>
+
     <script src="src/script.js"></script>
   </body>
 </html>
