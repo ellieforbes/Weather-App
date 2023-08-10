@@ -101,12 +101,13 @@ h2 {
   text-align: center;
 }
 .col-2 {
-  border: 2px solid white;
+  border: 2px solid rgb(250, 185, 185);
   background-color: white;
   border-radius: 5px;
   margin: 5px;
   padding: 5px;
 }
+
 .weather-forecast-temperature-min {
   opacity: 0.6;
   font-size: 14px;
