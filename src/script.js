@@ -30,6 +30,8 @@ function displayDate() {
 ${currentHour}:${currentMinute}`;
   let dateAndTime = document.querySelector("#date");
   dateAndTime.innerHTML = formattedDate;
+
+  let body = document.querySelector("#container");
 }
 
 function formatDay(timestamp) {
@@ -95,7 +97,7 @@ function showWeather(response) {
   cityName.innerHTML = response.data.city;
   humidity.innerHTML = `Humidity: ${response.data.temperature.humidity}%`;
   weatherDescription.innerHTML = response.data.condition.description;
-  windSpeed.innerHTML = `Wind: ${Math.round(response.data.wind.speed)}Km/h`;
+  windSpeed.innerHTML = `Wind: ${Math.round(response.data.wind.speed)}mph`;
   feelsLike.innerHTML = `${Math.round(response.data.temperature.feels_like)}°C`;
 
   iconElement.setAttribute("src", response.data.condition.icon_url);

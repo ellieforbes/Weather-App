@@ -20,7 +20,11 @@ h2 {
   max-width: 600px;
   margin: 20px;
   padding: 20px;
-  background-color: #cef2ff;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(137, 210, 253) 0%,
+    rgb(255, 241, 188) 90%
+  );
   border: 2px solid #adcdd8;
   border-radius: 10px;
 }
