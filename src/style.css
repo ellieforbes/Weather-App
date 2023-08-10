@@ -77,20 +77,6 @@ h2 {
   text-transform: capitalize;
 }
 
-.row {
-  text-align: center;
-}
-.col-2 {
-  border: 2px solid white;
-  background-color: white;
-  border-radius: 5px;
-  margin: 5px;
-  padding: 5px;
-}
-.weather-icon {
-  font-size: 30px;
-}
-
 .units {
   font-size: 17px;
   color: #5a6275;
@@ -106,4 +92,24 @@ h2 {
 }
 .units .active:hover {
   text-decoration: none;
+}
+.row {
+  text-align: center;
+}
+.col-2 {
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.6;
+  font-size: 14px;
+}
+.weather-forecast-date {
+  opacity: 0.8;
+}
+.weather-icon {
+  font-size: 30px;
 }
