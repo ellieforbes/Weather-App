@@ -96,22 +96,14 @@ h2 {
   color: #5a6275;
   position: relative;
   top: -13px;
-}
-#celsius-link {
   text-decoration: none;
-  color: blue;
 }
-#farenheit-link {
+
+.units .active {
+  color: #5a6275;
+  cursor: default;
   text-decoration: none;
-  color: blue;
 }
-#celsius-link:hover {
-  cursor: pointer;
-  text-decoration: underline;
-  color: navy;
-}
-#farenheit-link:hover {
-  cursor: pointer;
-  text-decoration: underline;
-  color: navy;
+.units .active:hover {
+  text-decoration: none;
 }
