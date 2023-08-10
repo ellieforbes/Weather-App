@@ -33,9 +33,7 @@ ${currentHour}:${currentMinute}`;
 }
 
 function showWeather(response) {
-  console.log(response.data);
   let temperatureHeading = document.querySelector("#degree");
-
   let cityName = document.querySelector("#city-name");
   let humidity = document.querySelector("#humidity");
   let weatherDescription = document.querySelector("#weather-description");
@@ -63,7 +61,7 @@ function search(city) {
 }
 
 function handleSubmit(event) {
-  city.preventDefault();
+  event.preventDefault();
   let cityInput = document.querySelector("#city-search-bar");
   let displayCity = document.querySelector("#city-name");
   search(cityInput.value);
