@@ -54,15 +54,18 @@ function showWeather(response) {
   iconElement.setAttribute("alt", response.data.condition.description);
 }
 
-function searchCity(event) {
-  event.preventDefault();
-  let cityInput = document.querySelector("#city-search-bar");
-  let displayCity = document.querySelector("#city-name");
-  displayCity.innerHTML = cityInput.value;
+function search(city) {
   let apiKey = "b5a70e3dbaf3379o5576fffe161ca0t4";
   let units = "metric";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${cityInput.value}&key=${apiKey}&units=metric`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showWeather);
+}
+
+function handleSubmit(event) {
+  city.preventDefault();
+  let cityInput = document.querySelector("#city-search-bar");
+  let displayCity = document.querySelector("#city-name");
+  search(cityInput.value);
 }
 
 function showPosition(position) {
@@ -79,9 +82,9 @@ function displayCurrentPosition() {
 }
 
 displayDate();
-
+search("London");
 let citySearch = document.querySelector("#city-search");
-citySearch.addEventListener("submit", searchCity);
+citySearch.addEventListener("submit", handleSubmit);
 
 let currentLocationBtn = document.querySelector("#current-location-btn");
 currentLocationBtn.addEventListener("click", displayCurrentPosition);
