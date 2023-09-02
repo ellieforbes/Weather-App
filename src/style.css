@@ -3,6 +3,11 @@ body {
   display: block;
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(137, 210, 253) 0%,
+    rgb(255, 241, 188) 90%
+  );
 }
 h1,
 h2 {
@@ -27,6 +32,8 @@ h2 {
   );
   border: 2px solid #adcdd8;
   border-radius: 10px;
+  box-shadow: rgba(111, 97, 192, 0.25) 0px 13px 27px -5px,
+    rgba(111, 97, 192, 0.3) 0px 8px 16px;
 }
 #source-code-link {
   margin-left: 5px;
